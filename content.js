@@ -13,7 +13,7 @@ chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
     removeBlockList()
 })
 function removeBlockList(){
-    
+    console.log('remove')
     for (let index = 0; index < blockList.length; index++) {
         const element = blockList[index];
         $(`.item-info-wrapper:contains(${element})`).remove()
